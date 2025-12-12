@@ -1,5 +1,21 @@
+<!DOCTYPE html>
 <html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Current Time</title>
+  <style>
+    body { font-family: system-ui, sans-serif; line-height: 1.6; padding: 2rem; }
+    .time { font-size: 2rem; }
+  </style>
+</head>
 <body>
-<p>this</p>
+  <h1>Current time (on load)</h1>
+  <div class="time" id="time"></div>
+
+  <script>
+    // Show current local time once
+    const now = new Date();
+    document.getElementById('time').textContent = now.toLocaleTimeString();
+  </script>
 </body>
 </html>
