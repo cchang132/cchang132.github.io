@@ -1,7 +1,4 @@
 <html>
-<body>
-<div class="time" id="time" style="font-size: 36px;"></div>
-<script> const now = new Date();
-document.getElementById('time').textContent = now.toLocaleTimeString();</script>
-</body>
+<div id="time" style="font-size:36px;"></div>
+<script>document.querySelector('#time').textContent = new Date().toLocaleTimeString();</script>
 </html>
